@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: hello-service
+
+eureka:
+  client:
+    service-url:
+     defaultZone: http://user:pwd123@service.example.com:8888/eureka/
+  instance:
+    prefer-ip-address: true
