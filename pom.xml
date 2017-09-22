@@ -9,6 +9,8 @@
     <modules>
         <module>Learn-1-Actuator</module>
         <module>Learn-2-Eureka</module>
+        <module>microservice-simple-provider-user</module>
+        <module>microservice-simple-consumer-movie</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -35,7 +37,11 @@
             <optional>true</optional>
         </dependency>
 
-
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
+        </dependency>
     </dependencies>
 
     <build>
