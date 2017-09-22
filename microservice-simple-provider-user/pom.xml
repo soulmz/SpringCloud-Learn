@@ -40,6 +40,12 @@
             <artifactId>h2</artifactId>
         </dependency>
 
+        <!-- 整合监控端点 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
