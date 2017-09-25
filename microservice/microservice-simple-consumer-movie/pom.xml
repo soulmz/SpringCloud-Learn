@@ -1,37 +1,32 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>Learn-2-Eureka</artifactId>
+        <artifactId>microservice</artifactId>
         <groupId>com.LearnSpringCloud</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>eureka-provider</artifactId>
+    <artifactId>microservice-simple-consumer-movie</artifactId>
     <packaging>jar</packaging>
 
-    <name>eureka-provider</name>
+    <name>microservice-simple-consumer-movie</name>
     <url>http://maven.apache.org</url>
+
+    <description>
+        来自: SpringCloud 与 Docker 微服务架构实战
+        用于描述微服务架构 服务消费者
+    </description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
 
         <dependency>
