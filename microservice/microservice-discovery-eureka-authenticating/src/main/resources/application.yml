@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: microservice-discovery-eureka-authenticating
+
+security:
+  basic:
+    enable: true  # 开启基于Http basic 认证
+  user:  # 登录用户信息
+    name: user
+    password: password
+
+
+---
+spring:
+  # 指定profile=peer1
+  profiles: peer1
+
+server:
+  port: 8761
+eureka:
+  instance:
+    # 当指定peer1 时，主机名为 peer1
+    hostname: peer1
+  client:
+    serviceUrl:
+      #将自己注册到peer2
+      defaultZone: http://user:password@peer2:8762/eureka/
+
+---
+spring:
+  profiles: peer2
+
+server:
+  port: 8762
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    serviceUrl:
+      defaultZone: http://user:password@peer1:8761/eureka/
+

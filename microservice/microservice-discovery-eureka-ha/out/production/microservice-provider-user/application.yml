@@ -1,0 +1,30 @@
+server:
+  port: 8081
+
+spring:
+ application:
+  name: microservice-provider-user
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    platform: h2
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+logging:
+  level: info
+info:
+  app:
+    name: microservice-provider-user
+    encoding: UTF-8
+    java:
+     source: 1.8.0_131
+     target: 1.8.0_131
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
+    instance:
+      prefer-ip-address: false

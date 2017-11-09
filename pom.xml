@@ -9,6 +9,7 @@
     <modules>
         <module>Learn-1-Actuator</module>
         <module>Learn-2-Eureka</module>
+        <!--<module>zhangmz-ms</module>-->
         <!--<module>microservice-simple-provider-user</module>-->
         <!--<module>microservice-simple-consumer-movie</module>-->
         <!--<module>microservice-discovery-eureka</module>-->
