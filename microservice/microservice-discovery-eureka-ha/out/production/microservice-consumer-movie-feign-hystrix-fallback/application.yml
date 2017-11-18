@@ -1,0 +1,15 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: mircoservice-consumer-movie
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:8761/eureka/
+  instance:
+    prefer-ip-address: false
+## SpringCloud D版本需要，之前的默认开启，针对feign的熔断降级处理，需要开启
+feign:
+  hystrix:
+    enabled: true
